@@ -129,7 +129,7 @@
                 android:layout_marginTop="3dp"
                 android:fontFamily="@font/acme"
                 android:gravity="center"
-                android:text="In This Option is used to covert one value To another Value"
+                android:text="                     Coming soon                    "
                 android:textColor="#0B0B0B"
                 android:textSize="18sp" />
 

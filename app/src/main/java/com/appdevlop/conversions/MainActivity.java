@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Convert(View view) {
-        startActivity(new Intent(MainActivity.this,Converstions.class));
     }
 
     public void Calc(View view) {
