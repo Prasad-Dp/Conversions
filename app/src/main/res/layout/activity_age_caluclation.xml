@@ -40,16 +40,15 @@
             android:padding="6dp">
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/pdtxt"
                 android:layout_width="252dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="29/09/2020"
                 android:textColor="#FFFFFF"
                 android:textSize="30sp" />
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/pdbtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -74,16 +73,15 @@
             android:padding="6dp">
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/dobtxt"
                 android:layout_width="252dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="10/06/2000"
                 android:textColor="#FFFFFF"
                 android:textSize="30sp" />
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/dobbtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -102,7 +100,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/agbg"
+                android:background="@color/colorAccent"
+                android:onClick="calculating"
                 android:text="Calculate"
                 android:textColor="#FFFFFF" />
 
@@ -112,7 +111,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/agbg"
+                android:background="@android:color/holo_green_light"
+                android:onClick="Clearing"
                 android:text="Clear"
                 android:textColor="#FFFFFF" />
         </LinearLayout>
@@ -176,32 +176,32 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView20"
+                    android:id="@+id/ayear"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="18"
+                    android:text="0"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp" />
 
                 <TextView
-                    android:id="@+id/textView21"
+                    android:id="@+id/amonth"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="06"
+                    android:text="0"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp" />
 
                 <TextView
-                    android:id="@+id/textView22"
+                    android:id="@+id/aday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="15"
+                    android:text="0"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp" />
             </LinearLayout>
@@ -257,7 +257,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView27"
+                    android:id="@+id/remain_m"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -267,12 +267,11 @@
                     android:textSize="30sp" />
 
                 <TextView
-                    android:id="@+id/textView28"
+                    android:id="@+id/remain_d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="05"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp" />
             </LinearLayout>
@@ -314,11 +313,11 @@
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/textView31"
+                    android:id="@+id/total_years"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="12"
+                    android:text="0"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp" />
             </LinearLayout>
@@ -341,11 +340,11 @@
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/textView33"
+                    android:id="@+id/total_monts"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="90"
+                    android:text="0"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp" />
             </LinearLayout>
@@ -368,13 +367,13 @@
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/textView35"
+                    android:id="@+id/total_weeks"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
-                    android:text="150"
+                    android:text="0"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp" />
             </LinearLayout>
@@ -397,11 +396,11 @@
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/textView37"
+                    android:id="@+id/total_days"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="1500"
+                    android:text="0"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp" />
             </LinearLayout>
@@ -424,11 +423,11 @@
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/textView39"
+                    android:id="@+id/total_hours"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="20000"
+                    android:text="0"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp" />
             </LinearLayout>
@@ -451,11 +450,11 @@
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/textView41"
+                    android:id="@+id/total_minutes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="100000"
+                    android:text="0"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp" />
             </LinearLayout>
@@ -478,11 +477,11 @@
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/textView43"
+                    android:id="@+id/total_seconds"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="1000000"
+                    android:text="0"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp" />
             </LinearLayout>

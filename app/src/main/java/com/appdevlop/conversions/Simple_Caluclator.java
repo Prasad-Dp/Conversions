@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.mozilla.javascript.Context;
 import org.mozilla.javascript.Scriptable;
@@ -31,7 +32,10 @@ String value;
 
     public void equal(View view) {
         value = input.getText().toString();
-
+        if (value.isEmpty()){
+            result.setText("");
+        }
+        else {
         value = value.replaceAll("×","*");
         value = value.replaceAll("%","/100");
         value = value.replaceAll("÷","/");
@@ -50,6 +54,7 @@ String value;
         }
 
         result.setText(finalResult);
+        }
     }
     public void Division(View view) {
         value=input.getText().toString();
@@ -78,8 +83,12 @@ String value;
     }
     public void BackSpace(View view) {
         String back=input.getText().toString();
-        String back1=back.substring(0,back.length()-1);
-        input.setText(back1);
+        if (back.isEmpty()){
+            Toast.makeText(this, "All Cleared", Toast.LENGTH_SHORT).show();}
+        else {
+                String back1=back.substring(0,back.length()-1);
+                input.setText(back1);}
+
     }
 
 

@@ -22,12 +22,12 @@
         android:id="@+id/input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:gravity="right"
         android:hint="0"
         android:inputType="textPersonName"
-        android:paddingTop="30dp"
-        android:paddingBottom="30dp"
+        android:paddingTop="50dp"
+        android:paddingBottom="20dp"
         android:textColor="#C4C1C1"
         android:textSize="36sp"
         android:textStyle="bold" />
@@ -38,8 +38,8 @@
         android:layout_height="wrap_content"
         android:gravity="right"
         android:inputType="textPersonName"
-        android:paddingTop="30dp"
-        android:paddingBottom="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
         android:textColor="#C4C1C1"
         android:textSize="36sp"
         android:textStyle="bold" />
@@ -289,7 +289,7 @@
             android:background="#1E1D1D"
             android:fontFamily="@font/aclonica"
             android:paddingTop="22dp"
-
+            android:paddingBottom="22dp"
             android:text="00"
             android:textSize="40sp"
             android:onClick="DZero"/>
@@ -302,7 +302,7 @@
             android:background="#1E1D1D"
             android:fontFamily="@font/aclonica"
             android:paddingTop="22dp"
-
+            android:paddingBottom="22dp"
             android:text="0"
             android:textSize="40sp"
             android:onClick="Zero"/>
@@ -315,7 +315,7 @@
             android:background="#1E1D1D"
             android:fontFamily="@font/aclonica"
             android:paddingTop="22dp"
-
+            android:paddingBottom="22dp"
             android:text="."
             android:textSize="40sp"
             android:onClick="Dot"/>
@@ -324,14 +324,17 @@
             android:id="@+id/eql"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
             android:layout_weight="1"
-            android:background="#1E1D1D"
+            android:background="#F75522"
             android:fontFamily="@font/aclonica"
+            android:onClick="equal"
             android:paddingTop="22dp"
+            android:paddingBottom="22dp"
             android:text="="
-            android:textColor="#009688"
-            android:textSize="40sp"
-            android:onClick="equal"/>
+            android:textColor="#000000"
+            android:textSize="40sp" />
     </LinearLayout>
 
 
